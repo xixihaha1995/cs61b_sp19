@@ -18,6 +18,7 @@ public class ArrayHeapMinPQ<T> implements ExtrinsicMinPQ<T> {
      * IllegalArgumentException if item is already present.
      * You may assume that item is never null. */
     @Override
+    //TODO Is complexity of this add call O(log(n))? I run it on my laptop, it's slower than NaiveHeapMinPQ.
     public void add(T item, double priority) {
         if (contains(item)) {
             throw new IllegalArgumentException();
